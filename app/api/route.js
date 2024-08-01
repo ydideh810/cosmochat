@@ -19,6 +19,8 @@ const VERSIONS = {
     "e272157381e2a3bf12df3a8edd1f38d1dbd736bbb7437277c8b34175f8fce358",
   "nateraw/salmonn":
     "ad1d3f9d2bd683628242b68d890bef7f7bd97f738a7c2ccbf1743a594c723d83",
+  "ydideh810/cosmo-speak":
+    "fd8ed7161c14133273cfa8fdc60a10143a0107a7d4adeb495ba98f22257d965e"
 };
 
 async function verifyTurnstile(token, ip, idempotencyKey) {
@@ -93,6 +95,20 @@ async function runLlama({
       repetition_penalty: 1,
       top_p: topP,
     },
+  });
+}
+async function runCosmo({ prompt, maxTokens, temperature, topP }) {
+  console.log("running cosmo");
+
+  return await replicate.predictions.create({
+    stream: true,
+    input: {
+      prompt: `${prompt}`,
+      top_p: topP,
+      temperature: temperature,
+      max_tokens: maxTokens
+    },
+    version: VERSIONS["ydideh810/cosmo-speak"],
   });
 }
 
