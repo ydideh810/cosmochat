@@ -2,10 +2,10 @@ import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "Chat with Meta Llama 3.1 on Replicate",
+  title: "CosmoSpeak",
   openGraph: {
-    title: "Chat with Meta Llama 3.1 on Replicate",
-    description: "Llama 3.1 is the latest language model from Meta.",
+    title: "CosmoSpeak",
+    description: "Explore Space Engineering witH AI",
   },
 };
 
@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <title>Chat with Meta Llama 3.1 on Replicate</title>
+        <title>CosmoSpeak</title>
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦙</text></svg>"
+          href="https://i.postimg.cc/50j3h5w5/Group-383.png"
         />
       </head>
       <body>
