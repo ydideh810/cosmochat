@@ -97,7 +97,7 @@ async function runLlama({
     },
   });
 }
-async function runCosmo({ prompt, maxTokens, temperature, topP }) {
+async function runCosmo({ prompt, maxTokens, temperature, topP, stop_sequences }) {
   console.log("running cosmo");
 
   return await replicate.predictions.create({
@@ -106,7 +106,8 @@ async function runCosmo({ prompt, maxTokens, temperature, topP }) {
       prompt: `${prompt}`,
       top_p: topP,
       temperature: temperature,
-      max_tokens: maxTokens
+      max_tokens: maxTokens,
+      stop_sequences: stop_sequences,
     },
     version: VERSIONS["ydideh810/cosmo-speak"],
   });
