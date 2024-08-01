@@ -14,11 +14,10 @@ export default function CallToAction() {
     >
       <div>
         <h1 className="text-2xl sm:text-3xl text-white font-bold">
-          Run Meta Llama 3.1 with an API
+          CosmoSpeak
         </h1>
         <p className="text-white mx-auto mt-2 sm:mt-0">
-          Replicate lets you run language models in the cloud with one line of
-          code.
+          Learn about Space Engineering through AI
         </p>
       </div>
 
