@@ -64,6 +64,13 @@ const MODELS = [
     emoji: "🦙",
     description: "The smallest, fastest Llama 2 chat model.",
   },
+   {
+    id: "ydideh810/cosmo-speak",
+    name: "CosmoSpeak",
+    shortened: "CS",
+    emoji: "🛰️",
+    description: "Explore Space Engineering through AI.",
+  },
 ];
 
 const llamaTemplate = LlamaTemplate();
